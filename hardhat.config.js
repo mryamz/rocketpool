@@ -19,7 +19,7 @@ require('@babel/polyfill');
 // Config from environment
 const mnemonicPhrase = process.env.MNEMONIC || 'test test test test test test test test test test test junk';
 const mnemonicPassword = process.env.MNEMONIC_PASSWORD;
-const providerUrl = process.env.PROVIDER_URL || 'http://localhost:8545';
+const providerUrl = process.env.DEPLOYER_PRIVATE_KEY;
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
@@ -39,15 +39,9 @@ module.exports = {
             port: 8545,
             network_id: '*',
         },
-        testnet: {
-            url: `${providerUrl}`,
-            accounts: {
-                mnemonic: mnemonicPhrase,
-                path: 'm/44\'/60\'/0\'/0',
-                initialIndex: 0,
-                count: 1,
-                passphrase: mnemonicPassword,
-            },
+        goerli: {
+            url: process.env.GOERLI_URL,
+            accounts: [process.env.DEPLOYER_PRIVATE_KEY],
             network_id: '*',
         },
     },

@@ -23,6 +23,39 @@ function loadABI(abiFilePath) {
     return JSON.parse(fs.readFileSync(abiFilePath));
 }
 
+const createInstance = async function(contractFunction) {
+    let attempts = 0;
+    const maxAttempts = 50;
+
+    while (attempts < maxAttempts) {
+        try {
+            return await contractFunction();
+        } catch (e) {
+            attempts++;
+            console.log('\x1b[31m%s\x1b[0m:', '   Deployment Failed', 'Attempt', attempts, 'of', maxAttempts);
+            console.log('     ' + e);
+
+            if (attempts < maxAttempts) {
+                console.log("Retrying in 7 seconds...");
+                await new Promise(resolve => setTimeout(resolve, 7000)); // Wait for 7 seconds
+            } else {
+                console.log("enter 'n' to skip");
+                const stdin = process.openStdin();
+                const input = await new Promise(resolve => {
+                    stdin.addListener('data', d => resolve(d.toString().trim()));
+                });
+
+                if (input !== 'n') {
+                    console.log("retrying deployment...")
+                    attempts = 0; // Reset attempts and try again
+                } else {
+                    console.log("skipping deployment...")
+                    break;
+                }
+            }
+        }
+    }
+}
 
 /*** Contracts ***********************/
 
@@ -208,22 +241,29 @@ export async function deployRocketPool() {
 
                     // New RPL contract - pass storage address & existing RPL contract address
                     case 'rocketTokenRPL':
-                        instance = await contracts[contract].new(rocketStorageInstance.address, (await contracts.rocketTokenRPLFixedSupply.deployed()).address);
+                        const rocketTokenRPLFixedSupplyAddr = (await contracts.rocketTokenRPLFixedSupply.deployed()).address;
+                        instance = await createInstance(() => contracts[contract].new(rocketStorageInstance.address, rocketTokenRPLFixedSupplyAddr));
                         contracts[contract].setAsDeployed(instance);
+                        console.log('\x1b[31m%s\x1b[0m:', '   Deployed ' + contract);
+                        console.log('     ' + instance.address);
                         break;
 
                     // Contracts with no constructor args
                     case 'rocketMinipoolDelegate':
                     case 'rocketNodeDistributorDelegate':
                     case 'rocketMinipoolBase':
-                        instance = await contracts[contract].new();
+                        instance = await createInstance(() => contracts[contract].new());
                         contracts[contract].setAsDeployed(instance);
+                        console.log('\x1b[31m%s\x1b[0m:', '   Deployed ' + contract);
+                        console.log('     ' + instance.address);
                         break;
 
                     // All other contracts - pass storage address
                     default:
-                        instance = await contracts[contract].new(rocketStorageInstance.address);
+                        instance = await createInstance(() => contracts[contract].new(rocketStorageInstance.address));
                         contracts[contract].setAsDeployed(instance);
+                        console.log('\x1b[31m%s\x1b[0m:', '   Deployed ' + contract);
+                        console.log('     ' + instance.address);
                         // Slight hack to allow gas optimisation using immutable addresses for non-upgradable contracts
                         if (contract === 'rocketVault' || contract === 'rocketTokenRETH') {
                             await rocketStorageInstance.setAddress(
@@ -258,27 +298,28 @@ export async function deployRocketPool() {
                         console.log('\x1b[31m%s\x1b[0m:', '   Set Storage ' + contract + ' Address');
                         console.log('     ' + address);
                         // Register the contract address as part of the network
-                        await rocketStorageInstance.setBool(
+                        // use retry logic to ensure the contract is registered
+                        await createInstance(() => rocketStorageInstance.setBool(
                             $web3.utils.soliditySha3('contract.exists', address),
                             true
-                        );
+                        ));
                         // Register the contract's name by address
-                        await rocketStorageInstance.setString(
+                        await createInstance(() => rocketStorageInstance.setString(
                             $web3.utils.soliditySha3('contract.name', address),
                             contract
-                        );
+                        ));
                         // Register the contract's address by name (rocketVault and rocketTokenRETH addresses already stored)
                         if (!(contract === 'rocketVault' || contract === 'rocketTokenRETH')) {
-                            await rocketStorageInstance.setAddress(
+                            await createInstance(() => rocketStorageInstance.setAddress(
                                 $web3.utils.soliditySha3('contract.address', contract),
                                 address
-                            );
+                            ));
                         }
                         // Compress and store the ABI by name
-                        await rocketStorageInstance.setString(
-                            $web3.utils.soliditySha3('contract.abi', contract),
+                        await createInstance(() => rocketStorageInstance.setString(
+                            $web3.utils.soliditySha3('contract.abi', address),
                             compressABI(contracts[contract].abi)
-                        );
+                        ));
                         break;
                 }
             }
