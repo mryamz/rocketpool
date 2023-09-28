@@ -366,13 +366,15 @@ export async function deployRocketPool() {
     // Store deployed block
     console.log('\n');
     console.log('Setting deploy.block to ' + deployBlock);
-    await rocketStorageInstance.setUint(
+    await createInstance(() => rocketStorageInstance.setUint(
         $web3.utils.soliditySha3('deploy.block'),
         deployBlock
-    );
+    ));
 
     // Disable direct access to storage now
-    await rocketStorageInstance.setDeployedStatus();
+    await createInstance(() => rocketStorageInstance.setDeployedStatus());
+    console.log("call 'rocketStorage.setDeployedStatus()' to re-enable direct access to storage");
+
     if(await rocketStorageInstance.getDeployedStatus() !== true) throw 'Storage Access Not Locked Down!!';
 
     // Log it
@@ -382,10 +384,12 @@ export async function deployRocketPool() {
 
     // Deploy development help contracts
     if (network.name !== 'live' && network.name !== 'goerli') {
-        let instance = await revertOnTransfer.new();
+        let instance = await createInstance(() => revertOnTransfer.new());
         revertOnTransfer.setAsDeployed(instance);
+        console.log('\x1b[31m%s\x1b[0m:', '   Deployed ' + 'revertOnTransfer');
 
-        instance = await rocketNodeDepositLEB4.new(rocketStorageInstance.address);
+        instance = await createInstance(() => rocketNodeDepositLEB4.new(rocketStorageInstance.address));
         rocketNodeDepositLEB4.setAsDeployed(instance);
+        console.log('\x1b[31m%s\x1b[0m:', '   Deployed ' + 'rocketNodeDepositLEB4');
     }
 };
