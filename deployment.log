@@ -1,0 +1,577 @@
+npx hardhat run ./scripts/deploy.js --network goerli
+Using network: goerli
+Deploying from: 0x7621940f6068C024Fb3a3eeE2810D5Ad76CEa374
+
+
+   Deployed rocketVault:
+     0x87858C41c6EF4b522A801997c10F04A1F73B02D2
+   Deployed rocketTokenRPLFixedSupply:
+     0x2da6F9CC38Fb0cf0A00DCAF134B2c95eaC448ad1
+   Deployed rocketTokenRETH:
+     0xAC4e063bF0A2A4E69B22802ABcE98bb0f175e724
+   Deployed rocketTokenRPL:
+     0x012222D4F3AE9E665761b26B67CA87B74c21E552
+   Deployed rocketAuctionManager:
+     0xb562a83d4e23c483027f87C6eC746D5cf06EF5c1
+   Deployed rocketDepositPool:
+     0x3Fa7a37D4bd2373e0cADCe72Cc8e5c8E4e96a9e4
+   Deployed rocketMinipoolDelegate:
+     0x84dcd18662693ECb980e72059628e19b7f19fF71
+   Deployed rocketMinipoolManager:
+     0xed5f6719AaF387d7A4BdFB07ED9a5a477518a0A4
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com -- Reason given: Custom error (could not decode).
+Retrying in 7 seconds...
+   Deployed rocketMinipoolQueue:
+     0x20B8bB8B42fC18698F6780044150774a641b33DC
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com -- Reason given: Custom error (could not decode).
+Retrying in 7 seconds...
+   Deployed rocketMinipoolPenalty:
+     0xBbe121cf5a0866E7f483F308AE5c284B56fB5ad5
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com -- Reason given: Custom error (could not decode).
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com -- Reason given: Custom error (could not decode).
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 3 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com -- Reason given: Custom error (could not decode).
+Retrying in 7 seconds...
+   Deployed rocketNetworkBalances:
+     0xA8B004CEFaC95FBC170ADf8c7017e1b61Ef32998
+   Deployed rocketNetworkFees:
+     0x04c1dc9b7469466c271Ec61052e777cCbe85567a
+   Deployed rocketNetworkPrices:
+     0x6b09C57Eae6D0D388281A9DA7a09fAE278d5740a
+   Deployed rocketNetworkPenalties:
+     0x60b2eBDb9916680fc01F657CBC75aB0183c72EDA
+   Deployed rocketRewardsPool:
+     0x94742dbEDd55fc407D46FaC252e1576FbA874284
+   Deployed rocketClaimDAO:
+     0x984fE148b501fF2f350EB5621DA276fC61d1405B
+   Deployed rocketNodeDeposit:
+     0xc13e68Cb8672D5e3A0F651131340698d19401064
+   Deployed rocketNodeManager:
+     0x4263d1Eb9bBa3335057E8093346091d92fa20C19
+   Deployed rocketNodeStaking:
+     0xc8b48F10b5656AD586924BC695c0ABD05dE5Aa44
+   Deployed rocketDAOProposal:
+     0xB9c908aA7bed9D27FA30d8CDca9c5Fe3d32eb664
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com -- Reason given: Custom error (could not decode).
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com -- Reason given: Custom error (could not decode).
+Retrying in 7 seconds...
+   Deployed rocketDAONodeTrusted:
+     0x4D0d902c14C66830E6F2C6B0cE5DBF2DB1e88223
+   Deployed rocketDAONodeTrustedProposals:
+     0x6ab189aC32775c68c08127312355c21CA95291b3
+   Deployed rocketDAONodeTrustedActions:
+     0xD3FCD35e9500713C75b2b122E96194aC9Cc7A1ec
+   Deployed rocketDAONodeTrustedUpgrade:
+     0x578BF673e729379100228CFC67A8dE5766CcC5d4
+   Deployed rocketDAONodeTrustedSettingsMembers:
+     0x66d0Cb1f30e1aD6F901cFCBE199cdAB15AE2A34a
+   Deployed rocketDAONodeTrustedSettingsProposals:
+     0x3B46bc4a6f83E195a368080e49301DF0d62bCac9
+   Deployed rocketDAONodeTrustedSettingsMinipool:
+     0xF83F7CFF84b4CDE928D239530431D50F020159Db
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com -- Reason given: Custom error (could not decode).
+Retrying in 7 seconds...
+   Deployed rocketDAOProtocol:
+     0x778a8ad1532feA23172a8CB350B147508a3975e5
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com -- Reason given: Custom error (could not decode).
+Retrying in 7 seconds...
+   Deployed rocketDAOProtocolProposals:
+     0x5400958d157069e5f76c29420bDf616631AAA499
+   Deployed rocketDAOProtocolActions:
+     0xB4710E1c2f05c4B8c3C8d258319285A0B93818d1
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com -- Reason given: Custom error (could not decode).
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com -- Reason given: Custom error (could not decode).
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 3 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com -- Reason given: Custom error (could not decode).
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 4 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com -- Reason given: Custom error (could not decode).
+Retrying in 7 seconds...
+   Deployed rocketDAOProtocolSettingsInflation:
+     0xeDBDFbA8D0719813F70FCc67E568bb0030333B7a
+   Deployed rocketDAOProtocolSettingsRewards:
+     0xfA6151f58E28bf82a89A1f8B8e31803eefC7fBC8
+   Deployed rocketDAOProtocolSettingsAuction:
+     0x2573F68A7c0D31369Aee815dC242EF3c2b708887
+   Deployed rocketDAOProtocolSettingsNode:
+     0x5d2Ab972493d991D437fEa0AAD45B95676eB3C4d
+   Deployed rocketDAOProtocolSettingsNetwork:
+     0x1970cb99211A0AC305e604F17d2cfC52C4309d1C
+   Deployed rocketDAOProtocolSettingsDeposit:
+     0x426350dDE3dde23B1D53e03333EcCBe3fF2D1634
+   Deployed rocketDAOProtocolSettingsMinipool:
+     0xc3E9A6D87274e3FC7316563EB060e539E948D6FB
+   Deployed rocketMerkleDistributorMainnet:
+     0xa67494C7481BBe18878accEC7367DbE22529C763
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com -- Reason given: Custom error (could not decode).
+Retrying in 7 seconds...
+   Deployed rocketDAONodeTrustedSettingsRewards:
+     0xf6eaCbf9690ad0091F5F15b261F3A6D40D8BE437
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com -- Reason given: Custom error (could not decode).
+Retrying in 7 seconds...
+   Deployed rocketSmoothingPool:
+     0xDfB57b2b30df6beb0D4CC064B44e657ED7Cbe0D0
+   Deployed rocketNodeDistributorFactory:
+     0x7048162493EC310f0Aed157434f0E4063e8cB1a2
+   Deployed rocketNodeDistributorDelegate:
+     0xfBed90a821b9A75486aBcbb56fb690fA44b198a4
+   Deployed rocketMinipoolFactory:
+     0x8bEfb7C6c34237e17F216A91d4296879d393E285
+   Deployed rocketMinipoolBase:
+     0x3b85b208c8c84f3665531996B0Db9E5588022b5A
+   Deployed rocketMinipoolBondReducer:
+     0x7Ec61D48364D17aDca381832dA9226815d4857F6
+   Deployed addressQueueStorage:
+     0x11ef85aA34A92638A8A4F3242c4C92428F92725d
+   Deployed addressSetStorage:
+     0x85D2715CA0bB760121582296a58CA99C035B062b
+  Deploy Contracts
+  ******************************************
+   Set Storage Address:
+     0x5467C31426F096e18e174C91dEA078bdc2e0aabD
+   Set Storage rocketVault Address:
+     0x87858C41c6EF4b522A801997c10F04A1F73B02D2
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 3 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 4 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 5 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketTokenRPLFixedSupply Address:
+     0x2da6F9CC38Fb0cf0A00DCAF134B2c95eaC448ad1
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketTokenRETH Address:
+     0xAC4e063bF0A2A4E69B22802ABcE98bb0f175e724
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketTokenRPL Address:
+     0x012222D4F3AE9E665761b26B67CA87B74c21E552
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 3 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketAuctionManager Address:
+     0xb562a83d4e23c483027f87C6eC746D5cf06EF5c1
+   Set Storage rocketDepositPool Address:
+     0x3Fa7a37D4bd2373e0cADCe72Cc8e5c8E4e96a9e4
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketMinipoolDelegate Address:
+     0x84dcd18662693ECb980e72059628e19b7f19fF71
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 3 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 4 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 5 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 3 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 4 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketMinipoolManager Address:
+     0xed5f6719AaF387d7A4BdFB07ED9a5a477518a0A4
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketMinipoolQueue Address:
+     0x20B8bB8B42fC18698F6780044150774a641b33DC
+   Set Storage rocketMinipoolPenalty Address:
+     0xBbe121cf5a0866E7f483F308AE5c284B56fB5ad5
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketNetworkBalances Address:
+     0xA8B004CEFaC95FBC170ADf8c7017e1b61Ef32998
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 3 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketNetworkFees Address:
+     0x04c1dc9b7469466c271Ec61052e777cCbe85567a
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketNetworkPrices Address:
+     0x6b09C57Eae6D0D388281A9DA7a09fAE278d5740a
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 3 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 4 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 5 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketNetworkPenalties Address:
+     0x60b2eBDb9916680fc01F657CBC75aB0183c72EDA
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketRewardsPool Address:
+     0x94742dbEDd55fc407D46FaC252e1576FbA874284
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 3 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 4 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 5 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 3 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketClaimDAO Address:
+     0x984fE148b501fF2f350EB5621DA276fC61d1405B
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketNodeDeposit Address:
+     0xc13e68Cb8672D5e3A0F651131340698d19401064
+   Set Storage rocketNodeManager Address:
+     0x4263d1Eb9bBa3335057E8093346091d92fa20C19
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketNodeStaking Address:
+     0xc8b48F10b5656AD586924BC695c0ABD05dE5Aa44
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketDAOProposal Address:
+     0xB9c908aA7bed9D27FA30d8CDca9c5Fe3d32eb664
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketDAONodeTrusted Address:
+     0x4D0d902c14C66830E6F2C6B0cE5DBF2DB1e88223
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketDAONodeTrustedProposals Address:
+     0x6ab189aC32775c68c08127312355c21CA95291b3
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketDAONodeTrustedActions Address:
+     0xD3FCD35e9500713C75b2b122E96194aC9Cc7A1ec
+   Set Storage rocketDAONodeTrustedUpgrade Address:
+     0x578BF673e729379100228CFC67A8dE5766CcC5d4
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 3 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 4 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketDAONodeTrustedSettingsMembers Address:
+     0x66d0Cb1f30e1aD6F901cFCBE199cdAB15AE2A34a
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketDAONodeTrustedSettingsProposals Address:
+     0x3B46bc4a6f83E195a368080e49301DF0d62bCac9
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 3 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 3 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 4 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 5 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 6 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 7 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketDAONodeTrustedSettingsMinipool Address:
+     0xF83F7CFF84b4CDE928D239530431D50F020159Db
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketDAOProtocol Address:
+     0x778a8ad1532feA23172a8CB350B147508a3975e5
+   Set Storage rocketDAOProtocolProposals Address:
+     0x5400958d157069e5f76c29420bDf616631AAA499
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketDAOProtocolActions Address:
+     0xB4710E1c2f05c4B8c3C8d258319285A0B93818d1
+   Set Storage rocketDAOProtocolSettingsInflation Address:
+     0xeDBDFbA8D0719813F70FCc67E568bb0030333B7a
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketDAOProtocolSettingsRewards Address:
+     0xfA6151f58E28bf82a89A1f8B8e31803eefC7fBC8
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketDAOProtocolSettingsAuction Address:
+     0x2573F68A7c0D31369Aee815dC242EF3c2b708887
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketDAOProtocolSettingsNode Address:
+     0x5d2Ab972493d991D437fEa0AAD45B95676eB3C4d
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketDAOProtocolSettingsNetwork Address:
+     0x1970cb99211A0AC305e604F17d2cfC52C4309d1C
+   Set Storage rocketDAOProtocolSettingsDeposit Address:
+     0x426350dDE3dde23B1D53e03333EcCBe3fF2D1634
+   Set Storage rocketDAOProtocolSettingsMinipool Address:
+     0xc3E9A6D87274e3FC7316563EB060e539E948D6FB
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketMerkleDistributorMainnet Address:
+     0xa67494C7481BBe18878accEC7367DbE22529C763
+   Set Storage rocketDAONodeTrustedSettingsRewards Address:
+     0xf6eaCbf9690ad0091F5F15b261F3A6D40D8BE437
+   Set Storage rocketSmoothingPool Address:
+     0xDfB57b2b30df6beb0D4CC064B44e657ED7Cbe0D0
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketNodeDistributorFactory Address:
+     0x7048162493EC310f0Aed157434f0E4063e8cB1a2
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketNodeDistributorDelegate Address:
+     0xfBed90a821b9A75486aBcbb56fb690fA44b198a4
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage rocketMinipoolFactory Address:
+     0x8bEfb7C6c34237e17F216A91d4296879d393E285
+   Set Storage rocketMinipoolBase Address:
+     0x3b85b208c8c84f3665531996B0Db9E5588022b5A
+   Set Storage rocketMinipoolBondReducer Address:
+     0x7Ec61D48364D17aDca381832dA9226815d4857F6
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage addressQueueStorage Address:
+     0x11ef85aA34A92638A8A4F3242c4C92428F92725d
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage addressSetStorage Address:
+     0x85D2715CA0bB760121582296a58CA99C035B062b
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Set Storage casperDeposit Address:
+     0xff50ed3d0ec03ac01d4c79aad74928bff48a7b2b
+   Set Storage rocketStorage Address:
+     0x5467C31426F096e18e174C91dEA078bdc2e0aabD
+
+
+  Set ABI Only Storage
+  ******************************************
+   Set Storage ABI:
+     rocketMinipool
+
+
+Setting deploy.block to 9770067
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 1 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 2 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+   Deployment Failed: Attempt 3 of 50
+     Error: Returned error: Too Many Requests error received from eth-goerli.g.alchemy.com
+Retrying in 7 seconds...
+call 'rocketStorage.setDeployedStatus()' to re-enable direct access to storage
+
+
+  Storage Direct Access For Owner Removed... Lets begin! :)
